@@ -1,0 +1,70 @@
+<html>
+  <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet'/>
+<link href='//dl.dropboxusercontent.com/s/xsb3qfnasnmd9ib/WhatsApp.css' rel='stylesheet'/>
+</head>
+<body>
+  <h2>Pure Tombol klik untuk Order Via WhatsApp V2.0</h2>
+  <button class="open-button" onclick="openForm()"><i class="fa fa-whatsapp fa-3x" title="Chat di WhatsApp dengn kami Untuk Order atau Menanyakan lebih lanjut."></i></button>
+  <div class="chat-popup" id="myWA">
+  <div class="form-container">
+    <div class="wa-title"><i class="fa fa-whatsapp fa-1x"></i> WhatsApp</div>
+<div id="whatsapp" class="toggle">
+<input class="tujuan" type="hidden" value="081222554492" />
+  <!-- No. WhatsApp -->
+<label><i class="fa fa-user-secret"> Nama Lengkap</i>
+<input class="nama" placeholder="" type="text" />
+</label>
+<label><i class="fa fa-map-marker"> Alamat</i>
+<input class="alamat" placeholder="" type="alamat" />
+</label>
+<label><i class="fa fa-mobile"> No. WA</i>
+<input class="nomor" placeholder="" type="nomor" />
+</label>
+<label><i class="fa fa-opencart"> Order</i>
+<select class="paket" id="paket">
+    <optgroup label="SEO Murah">
+      <option value="SEO MR-1">Paket SEO MR-1</option>
+      <option value="SEO MR-2">Paket SEO MR-2</option>
+      <option value="SEO MR-3">Paket SEO MR-3</option>
+    </optgroup>
+    <optgroup label="SEO Bergaransi">
+      <option value="SEO G-1">Paket SEO G-1</option>
+      <option value="SEO G-2">Paket SEO G-2</option>
+      <option value="SEO G-3">Paket SEO G-3</option>
+    </optgroup>
+    <optgroup label="SEO Tahunan">
+      <option value="SEO Y-1">Paket SEO Y-1</option>
+      <option value="SEO Y-2">Paket SEO Y-2</option>
+      <option value="SEO Y-3">Paket SEO Y-3</option>
+    </optgroup>
+    <optgroup label="Pembuatan Website">
+      <option value="Website Paket Bayi">Paket Bayi</option>
+      <option value="Website Paket Pelajar">Paket Pelajar</option>
+      <option value="Website Paket Premium">Paket Premium</option>
+      <option value="Website Paket Perusahaan">Paket Premium</option>
+    </optgroup>
+    <optgroup label="Penulisan Konten">
+      <option value="Konten Paket Pelajar">Paket Pelajar</option>
+      <option value="Konten Paket Bisnis">Paket Bisnis</option>
+      <option value="Konten Paket Premium">Paket Premium</option>
+      <option value="Konten Paket Perusahaan">Paket Perusahaan</option>
+    </optgroup><br/>
+    <optgroup label="Lain-lain">
+      <option value="Konten media">Konten media</option>
+      <option value="Deskripsi Produk">Deskripsi Produk</option>
+      <option value="Desain Brand">Desain Brand</option>
+    </optgroup>
+</select>
+</label>
+<label><i class="fa fa-calculator"> Pesan Lengkap</i>
+<textarea class="pesan" placeholder=""></textarea>
+</label>
+<a class="submit"><i class="fa fa-paper-plane fa-1x">  <b>Kirim Pesan</b></i></a>
+</div>
+<button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
+    </div>
+    </div>
+  </body>
+</html>
