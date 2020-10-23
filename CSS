@@ -1,0 +1,30 @@
+/*
+-----------------------------------------------
+Name:         CSS Tombol klik untuk Order Via WhatsApp V2.0
+Version:      2.0.0 (Oktober 2020)
+Author:       Indra LKM (B575ID)
+Author URL 1: https://www.b575.co.id
+Author URL 2: https://jasa.b575.co.id
+----------------------------------------------- */
+.whatsapp-btn {cursor:pointer; position:fixed; bottom:90px; right:90px; display:block; width:90px; height:90px; border-radius:90px; text-indent:-9999px; background:#187a30; box-shadow:0 10px 15px rgba(0,0,0,.05); transition:.2s}
+.whatsapp-btn:active {bottom:35px}
+#whatsapp {position:fixed; z-index:+100; bottom:0px; right:0px; display:block; box-shadow:0 10px 15px rgba(0, 0, 0, 0); max-width:-webkit-fill-available; font-family:Helvetica, sans-serif; font-size:90%; border-radius:4px; visibility:hidden; opacity:0; transition:.3s}
+#whatsapp.toggle {font-size: 100%; padding: 0px; position: relative; visibility: initial; opacity: unset}
+@media(max-width:50px) {.whatsapp-btn { bottom:10px; right:10px}
+#whatsapp.toggle {bottom:80px; right:10px; visibility:visible; opacity:1; } }
+#whatsapp input, #whatsapp select, #whatsapp textarea {background: #f1f1f1;color: #020202;display:block; border:1px solid #21811a; box-shadow:inset 0 2px 5px #ffffff00; width:-webkit-fill-available; padding:5px; border-radius:2px}
+#whatsapp input.nama {text-transform:capitalize}
+#whatsapp input:focus, #whatsapp textarea:focus {border:1px solid #ddd;}
+#whatsapp textarea { min-height:30px; resize: none; }
+#whatsapp label, #whatsapp a {display:block; margin:5px 10px; text-decoration:none}
+#whatsapp a{ cursor:pointer;padding:10px;font: bold Arial,sans-serif; text-align:center; background:#187a30; color:white; border-radius:2px; }
+#whatsapp a:hover { background:#20b558; color:#fff;}
+.wa-title {padding: 6px 20px; text-align: left; background-color:#187a30; color: white;font-size: 24px; font-weight: bold;}
+.open-button {background-color: transparent; font-size: 100%; color: #187a30; padding: none; border: none; cursor: pointer; opacity: 0.8; position:fixed !important; bottom: 20px; left: 10px; width: 42px; height: 42px;}
+.chat-popup {background-color: #f0f0f0; color:#187a30; display: none; position: fixed; bottom: 1%; left:1%; border: 1px solid #187a30; z-index: 999;-webkit-transition: 0.3s;transition: 0.3s;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25), 0 0 0 transparent, 0 0 0 transparent;}
+.form-container {width: 250px; max-width: 350px; padding: none; background-color: f0f0f0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.form-container .btn { background-color: #000; color: white; padding: 5px 8px; border: none; cursor: pointer; width: 30%; opacity: 0.8; }
+.form-container .cancel { background-color: #000; }
+.form-container .btn:hover, .open-button:hover { opacity: 1; }
+#whatsapp optgroup {background-color: #187a30;color: white;margin: 1em;}
+#whatsapp option {background-color: white;color: black;margin: 1em;}
